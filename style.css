@@ -12,7 +12,7 @@ body {
     background-image: linear-gradient(rgba(249, 249, 249, 0.72), rgba(249, 249, 249, 0.72)), url("images/1411JJ_Pribram_Milin_Orlik_118.jpg");
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
+    background-size: calc(100% + 100px) auto;
     background-attachment: fixed;
     padding: 15px;
 }
@@ -56,10 +56,11 @@ main {
 }
 
 .fluidni-obrazek {
+    width: calc(100% - 100px);
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 15px 0;
+    margin: 15px auto;
     border-radius: 4px;
 }
 
@@ -106,6 +107,11 @@ footer {
     color: #777;
 }
 
+/* základ = mobil */
+.card {
+    width: 100%;
+}
+
 @media (min-width: 768px) {
     body {
         max-width: 800px;
@@ -119,5 +125,9 @@ footer {
 
     .hlavni-clanek h2 {
         font-size: 1.9rem;
+    }
+
+    .card {
+        width: 100%;
     }
 }
