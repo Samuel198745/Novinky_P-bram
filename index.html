@@ -9,13 +9,26 @@
 </head>
 <body>
 
-    <header>
-        <div  class="Menu">
-            <img src="images/logo.png" alt="Logo Novinky Příbram">
-
+    <header class="site-header">
+        <div class="menu-toggle">
+            <input type="checkbox" id="menu-toggle" aria-label="Otevřít menu">
+            <label for="menu-toggle" class="hamburger" aria-label="Rozbalit menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="menu-panel" aria-label="Hlavní menu">
+                <a href="#">Domů</a>
+                <a href="#">Zprávy</a>
+                <a href="#">Kultura</a>
+                <a href="#">Sport</a>
+            </nav>
         </div>
-        <h1>Novinky Příbram</h1>
-        <p>Aktuální dění ve vašem městě</p>
+
+        <div class="header-text">
+            <h1>Novinky Příbram</h1>
+            <p>Aktuální dění ve vašem městě</p>
+        </div>
     </header>
 
     <main>
